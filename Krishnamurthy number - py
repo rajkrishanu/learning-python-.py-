@@ -1,0 +1,19 @@
+# Here's a Python program that checks whether a number is a Krishnamurthy number or not:
+import math
+def is_krishnamurthy_number(n):
+  digits = str(n)
+  factorial_sum = sum(math.factorial(int(digit)) for digit in digits)
+  return factorial_sum == n
+
+test_number = [145, 40585, 123]
+for number in test_numbers:
+  if is_krishnamurthy_number(number):
+    print(f"{number} is a Krishnamurthy number.")
+  else:
+    print(f"{number} is not a Krishnamurthy number.")
+
+"""
+Additional Notes:
+The factorial calculation is done using 'math.factorial', which is optimized for performance compared to a manually implemented factorial function.
+
+"""
